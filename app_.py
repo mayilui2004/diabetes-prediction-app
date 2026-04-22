@@ -111,7 +111,7 @@ def main():
 
     raw = [bgl, dbp, sbp, hr, temp, spo2, sweating, shivering]
 
-    if st.sidebar.button("🔮 Predict", use_container_width=True):
+    if st.sidebar.button(" Predict", use_container_width=True):
         with st.spinner("Running inference..."):
             if loaded:
                 preds, cat, conf = run_prediction(mdl, feat_sc, tgt_sc, raw)
